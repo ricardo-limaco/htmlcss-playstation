@@ -83,7 +83,10 @@ a {
 ._section-new-releases .container .row img {
   border-radius: 10%;
 }
+/************** PS4 **************/
 
+
+/************** Section Playstation Plus **************/
 
 
 
@@ -134,11 +137,16 @@ a {
 
 ._btn-orange {
   background-color: #CD3D0F;
+  color: white;
 }
 ._btn-blue {
   background-color: #2D64E6;
+  color: white;
 }
-
+._btn-grey {
+  background-color: #D9DADC;
+  color: #2D64E6;
+}
 /**************************************************
 * Root
 **************************************************/
