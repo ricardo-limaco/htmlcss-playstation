@@ -80,6 +80,12 @@ a {
   background-position: center;
 }
 /************** Section New Releases **************/
+._section-new-releases .container .row img {
+  border-radius: 10%;
+}
+
+
+
 
 
 
@@ -120,7 +126,10 @@ a {
   text-transform: uppercase;
   color: #2D64E6;
 }
-
+._section-text-card {
+  padding-top: 20px;
+  font-size: 1.1rem;
+}
 
 
 ._btn-orange {
