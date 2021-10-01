@@ -1,0 +1,148 @@
+/**************************************************
+* Selettori Tag
+**************************************************/
+h2 { font-size: 2.5rem; margin: 0; padding: 0;}
+h3 { font-size: 2.3rem; margin: 0; padding: 0;}
+h4 { font-size: 1.3rem; margin: 0; padding: 0;}
+h5, small, footer { font-size: 0.9rem; margin: 0; padding: 0;}
+
+
+body { font-family:  Arial, sans-serif;}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/**************************************************
+* Layout
+**************************************************/
+
+/************** Navbar **************/
+/* Nav Sony */
+._nav-sony img{
+  width: 80px;
+  padding: 10px 0;
+}
+/* Nav Ps */
+._nav-ps-left ul li {
+  display: inline-block;
+}
+._arrow-down{
+  width: 16px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+._nav-ps-right ul li {
+  display: inline-block;
+}
+._lens {
+  height: 23px;
+  padding-left: 20px;
+}
+
+/************** Hero **************/
+._bg-hero {
+  background-image: url(..//img/returnal-listing-thumb-01-ps5.jpg);
+  background-size: cover;
+  background-position-y: top;
+  background-position-x: right;
+}
+._bg-hero-opacity {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/************** PS5 **************/
+._section-ps5 .row .col {
+  opacity: 0.5;
+}
+._section-ps5 .row .col:hover {
+  opacity: 1;
+  border-bottom: 2px solid #2D64E6;
+}
+._section-ps5 .row .col h4 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+/************** Hero-2 **************/
+._bg-hero-2 {
+  background-image: url(..//img/it-takes-two-hero-banner-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/************** Section New Releases **************/
+
+
+
+/**************************************************
+* Utilities
+**************************************************/
+/* Section */
+._section-base {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+._section-medium {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+._section-large {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+._section-hero {
+  padding-top: 250px;
+  padding-bottom: 50px;
+}
+/* Section text */
+._section-title {
+  padding-bottom: 30px;
+}
+._section-text {
+  padding-bottom: 30px;
+}
+._section-subtitle {
+  padding-bottom: 30px;
+  color: #727272;
+  font-size: 1.3rem;
+}
+._section-super {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  color: #2D64E6;
+}
+
+
+
+._btn-orange {
+  background-color: #CD3D0F;
+}
+._btn-blue {
+  background-color: #2D64E6;
+}
+
+/**************************************************
+* Root
+**************************************************/
+:root {
+  --bs-warning-rgb: 205,61,15;
+}
+
+
+
+/**************************************************
+* Media Query
+**************************************************/
+
+
+
+/*   xs <575 / sm >576 / md >768 /lg >992   */
