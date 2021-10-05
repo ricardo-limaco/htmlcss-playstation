@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +14,94 @@
 </head>
 
 <body>
-  <header>
+  <header class="sticky-top">
     <!-- Nav Sony -->
     <section class="bg-black">
       <div class="container-fluid text-end _nav-sony">
-        <img src="img/sony_logo.svg" alt="Sony-logo" style="width: 80px;">
+        <a href="#">
+          <img src="img/sony_logo.svg" alt="Sony-logo" style="width: 80px;">
+        </a>
       </div>
     </section>
+
     <!-- Nav Ps -->
-    <section class="container-fluid sticky">
-      
+    <section class="container-fluid d-flex align-items-center _nav-sticky">
+      <div class="d-flex">
+        <a href="#">
+          <img src="img/play_logo.svg" alt="Playstation-logo">
+        </a>
+      </div>
+      <!-- Row -->
+      <div class="d-none d-lg-flex align-items-center flex-grow-1">
+        <!-- Left -->
+        <div class="_nav-ps-left d-flex">
+          <ul class="ps-3">
+            <li><a href="#" class="_nav-icon-hover">Giochi
+                <span class="position-relative">
+                  <img src="img/chevron-down-solid.svg" alt="arrow-down" class="_arrow-down">
+                  <img src="img/chevron-down-solid-hover.svg" alt="arrow-down" class="_arrow-down-hover">
+                </span>
+              </a></li>
+
+            <li><a href="#" class="_nav-icon-hover">Hardware
+                <span class="position-relative">
+                  <img src="img/chevron-down-solid.svg" alt="arrow-down" class="_arrow-down">
+                  <img src="img/chevron-down-solid-hover.svg" alt="arrow-down" class="_arrow-down-hover">
+                </span>
+              </a></li>
+
+            <li><a href="#" class="_nav-icon-hover">Servizi
+              <span class="position-relative">
+                <img src="img/chevron-down-solid.svg" alt="arrow-down" class="_arrow-down">
+                <img src="img/chevron-down-solid-hover.svg" alt="arrow-down" class="_arrow-down-hover">
+              </span>
+              </a></li>
+
+            <li><a href="#" class="_nav-icon-hover">Novità
+              <span class="position-relative">
+                <img src="img/chevron-down-solid.svg" alt="arrow-down" class="_arrow-down">
+                <img src="img/chevron-down-solid-hover.svg" alt="arrow-down" class="_arrow-down-hover">
+              </span>
+              </a></li>
+
+            <li><a href="#" class="_nav-icon-hover">Fai acquisti
+              <span class="position-relative">
+                <img src="img/chevron-down-solid.svg" alt="arrow-down" class="_arrow-down">
+                <img src="img/chevron-down-solid-hover.svg" alt="arrow-down" class="_arrow-down-hover">
+              </span>
+              </a></li>
+              
+            <li><a href="#" class="_nav-icon-hover">Supporto
+              <span class="position-relative">
+                <img src="img/chevron-down-solid.svg" alt="arrow-down" class="_arrow-down">
+                <img src="img/chevron-down-solid-hover.svg" alt="arrow-down" class="_arrow-down-hover">
+              </span>
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- Right -->
+        <div class="_nav-ps-right d-flex flex-nowrap ms-auto">
+          <ul>
+            <li><a href="#" class="_nav-icon-hover _text-black">My PlayStation
+              <span class="position-relative">
+                <img src="img/chevron-down-solid.svg" alt="arrow-down" class="_arrow-down">
+                <img src="img/chevron-down-solid-hover.svg" alt="arrow-down" class="_arrow-down-hover">
+              </span>
+              </a></li>
+            <li><a class="btn btn-sm btn-dark rounded-pill">Accedi</a></li>
+            <li><a href="#"><img src="img/lens.svg" alt="lens" class="_lens"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hambuger -->
+      <div class="_hamburger-menu ms-auto">
+        <a href="#" class="btn btn-outline-secondary d-lg-none ">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+
     </section>
 
   </header>
@@ -43,7 +122,11 @@
                   <p class="_section-text">Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in
                     questo esplosivo thriller fantascientifico, disponibile in esclusiva su PS5.</p>
                 </li>
-                <li><a href="#" class="btn _btn-orange text-white rounded-pill">Acquista ora</a></li>
+                <li>
+                  <button class="_btn-orange-border rounded-pill p-0">
+                    <a href="#" class="btn _btn-orange text-white rounded-pill">Acquista ora</a>
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
@@ -57,29 +140,40 @@
         <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 gy-4">
 
           <div class="col">
-            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="img-fluid">
+            <div class="_card-hover">
+              <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="img-fluid">
+            </div>
           </div>
 
           <div class="col">
-            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="img-fluid">
+            <div class="_card-hover">
+              <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="img-fluid">
+            </div>
           </div>
 
           <div class="col">
-            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="img-fluid">
+            <div class="_card-hover">
+              <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="img-fluid">
+            </div>
           </div>
 
           <div class="col">
-            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="img-fluid">
+            <div class="_card-hover">
+              <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="img-fluid">
+            </div>
           </div>
 
           <div class="col">
-            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="img-fluid">
+            <div class="_card-hover">
+              <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="img-fluid">
+            </div>
           </div>
 
           <div class="col">
-            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="img-fluid">
+            <div class="_card-hover">
+              <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="img-fluid">
+            </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -88,7 +182,7 @@
     <section class="_section-large">
       <div class="container">
         <!-- Text PS5 -->
-        <div class="text-center">
+        <div class="_section-base text-center">
           <h5 class="_section-super">Play has no limit</h5>
           <h2 class="_section-title">Ecco la Playstation 5</h2>
           <h5 class="_section-subtitle">Tuffati in nuove possibilità di gioco completamente inaspettate</h5>
@@ -96,13 +190,15 @@
 
         <!-- text left -->
         <div class="row align-items-center">
-          <div class="col">
+          <div class="col-12 col-md-6">
             <h2 class="_section-title">Console Playstation 5</h2>
             <h5 class="_section-subtitle">Sperimenta la nuova generazione di incredibili giochi Playstation.</h5>
-            <a href="#" class="btn _btn-blue text-white rounded-pill">Maggiori informazioni</a>
+            <button class="_btn-blue-border rounded-pill p-0">
+              <a href="#" class="btn _btn-blue rounded-pill">Maggiori informazioni</a>
+            </button>
           </div>
           <!-- img right -->
-          <div class="col">
+          <div class="col-12 col-md-6">
             <img src="img/playstation-5-thumb.png" alt="PS5" class="img-fluid">
           </div>
         </div>
@@ -158,7 +254,11 @@
                       vite in It Take Two, un gioco d'avventura cooperativa a piattaforma che stravolge il suo genere.
                     </p>
                   </li>
-                  <li><a href="#" class="btn _btn-orange text-white rounded-pill">Acquista ora</a></li>
+                  <li>
+                    <button class="_btn-orange-border rounded-pill p-0">
+                      <a href="#" class="btn _btn-orange text-white rounded-pill">Acquista ora</a>
+                    </button>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -257,21 +357,27 @@
             <img src="img/ps4-slim-homepage-image-block.jpg" alt="PS4" class="img-fluid">
             <h2 class="_section-title">Playstation 4</h2>
             <h5 class="_section-subtitle">Giochi incredibili live su PS4, con 1 TB di spazio di archiviazione.</h5>
-            <a href="#" class="btn _btn-blue rounded-pill">Scopri di più</a>
+            <button class="_btn-blue-border rounded-pill p-0">
+              <a href="#" class="btn _btn-blue rounded-pill">Scopri di più</a>
+            </button>
           </div>
 
           <div class="col-12 col-md-4">
             <img src="img/double11-202010-tw-psvr.jpg" alt="PlayStation-VR" class="img-fluid">
             <h2 class="_section-title">PlayStation VR</h2>
             <h5 class="_section-subtitle">Oltre 500 titoli ed esperienze di gioco. Scopri tutti</h5>
-            <a href="#" class="btn _btn-blue rounded-pill">Scopri di più</a>
+            <button class="_btn-blue-border rounded-pill p-0">
+              <a href="#" class="btn _btn-blue rounded-pill">Scopri di più</a>
+            </button>
           </div>
 
           <div class="col-12 col-md-4">
             <img src="img/dualshock-4-listing-thumb.jpg" alt="Accessori" class="img-fluid">
             <h2 class="_section-title">Accessori</h2>
             <h5 class="_section-subtitle">Migliora la tua esperienza PS4 con una gamma di accessori ufficiali.</h5>
-            <a href="#" class="btn _btn-blue rounded-pill">Scopri di più</a>
+            <button class="_btn-blue-border rounded-pill p-0">
+              <a href="#" class="btn _btn-blue rounded-pill">Scopri di più</a>
+            </button>
           </div>
         </div>
       </div>
@@ -287,7 +393,9 @@
               <img src="img/ps-plus-logo.png" alt="Playstation-plus" class="_section-title img-fluid w-75">
               <h5 class="_section-text">Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online
                 giochi mensili, sconti esclusivi e altro ancora.</h5>
-              <a href="#" class="btn _btn-grey rounded-pill">Esplora Playstation Plus</a>
+              <button class="_btn-grey-border rounded-pill p-0">
+                <a href="#" class="btn _btn-grey rounded-pill">Esplora Playstation Plus</a>
+              </button>
             </div>
           </div>
 
@@ -333,7 +441,9 @@
               <img src="img/ps-now-logo-two-column.png" alt="Playstation-plus" class="_section-title img-fluid w-75">
               <h5 class="_section-text text-white">Ottieni l'accesso immediato a una vastissima raccolta di oltre 800
                 giochi per PS4, PS3 e PS2 su PS4 o PC Windows, con nuovi titoli aggiunti ogni mese.</h5>
-              <a href="#" class="btn _btn-white rounded-pill">Esplora Playstation Now</a>
+              <button class="_btn-white-border rounded-pill p-0">
+                <a href="#" class="btn _btn-white rounded-pill">Esplora Playstation Now</a>
+              </button>
             </div>
           </div>
 
@@ -420,9 +530,11 @@
           <div class="col-12 col-lg-6">
             <img src="img/sie-logo.svg" alt="Sie-logo" style="width: 160px;">
             <h5 style="padding-top: 15px;" class="lh-base">
-              Websity ©2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi, nomi commericiali e/o
+              Websity ©2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi, nomi
+              commericiali e/o
               abbigliamento, marchi registrati, grafica e immagini associati sono marchi registrati e/o materiale
-              protetto da copyright dei rispettivi proprietari. Tutti i diritti riservati.<a href="#" class="text-white text-decoration-underline">Maggiori info</a>
+              protetto da copyright dei rispettivi proprietari. Tutti i diritti riservati.<a href="#"
+                class="text-white text-decoration-underline">Maggiori info</a>
             </h5>
           </div>
         </div>

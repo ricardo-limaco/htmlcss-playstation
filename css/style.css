@@ -33,22 +33,75 @@ a {
   width: 80px;
   padding: 10px 0;
 }
-/* Nav Ps */
+
+._nav-sticky {
+  background-color: white;
+  height: 50px;
+}
+
+/* Nav Ps left */
 ._nav-ps-left ul li {
   display: inline-block;
 }
+._nav-ps-left ul li a{
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 14px;
+}
+/* Arrow down */
 ._arrow-down{
-  width: 16px;
-  padding-left: 5px;
-  padding-bottom: 2px;
+  width: 10px;
+  margin-left: 5px;
+}
+._arrow-down-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 10px;
+  margin-left: 5px;
+}
+._nav-icon-hover:hover ._arrow-down-hover {
+  display: block;
+  top: 5px;
+}
+._nav-icon-hover:focus ._arrow-down-hover {
+  transform: rotate(180deg);
+}
+._nav-icon-hover:hover ._arrow-down {
+  opacity: 0;
+}
+a._nav-icon-hover:hover {
+  color: #2D64E6;
 }
 
+/* Nav Ps right */
 ._nav-ps-right ul li {
   display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
 }
+
+._nav-ps-right ul li:nth-child(1){
+  padding-right: 10px;
+}
+._text-black {
+  color: black;
+}
+
 ._lens {
-  height: 23px;
-  padding-left: 20px;
+  height: 22px;
+  padding-left: 15px;
+}
+/* Nav Hamburger */
+._hamburger-menu a i {
+  transform: scaleX(1.4);
+  color: grey;
+}
+._hamburger-menu:hover i{
+  color: white;
 }
 
 /************** Hero **************/
@@ -59,14 +112,28 @@ a {
   background-position-x: center;
 }
 
+
 /************** Card Game **************/
 ._section-card-game .row .col img {
   border-radius: 20px;
+  border: 3px solid transparent;
 }
+
+._card-hover {
+  border: 3px solid transparent;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+._card-hover:hover {
+  border: 3px solid #2D64E6;
+  transform: translateY(-10px);
+}
+
 
 /************** PS5 **************/
 ._section-ps5 .row .col {
   opacity: 0.5;
+  border-bottom: 2px solid transparent
 }
 ._section-ps5 .row .col:hover {
   opacity: 1;
@@ -77,12 +144,14 @@ a {
   padding-bottom: 15px;
 }
 
+
 /************** Hero-2 **************/
 ._bg-hero-2 {
   background-image: url(..//img/it-takes-two-hero-banner-desktop.jpg);
   background-size: cover;
   background-position: center;
 }
+
 
 /************** Section New Releases **************/
 ._section-medium._section-new-releases {
@@ -98,11 +167,15 @@ a {
   padding-bottom: 30px;
 }
 
+
 /************** Footer **************/
 footer ul li {
   padding-bottom: 13px;
 }
 footer ul li a {
+  color: white;
+}
+footer ul li a:hover {
   color: white;
 }
 
@@ -156,28 +229,74 @@ footer ul li a {
 
 
 /* Button */
+.btn-dark {
+  background-color: #363636;
+  border-color: #363636;
+}
+/* Orange */
 ._btn-orange {
   background-color: #CD3D0F;
-  color: white;
+  border: 2px solid #CD3D0F;
 }
+._btn-orange:hover {
+  border: 2px solid black;
+}
+._btn-orange-border {
+  border: 2px solid #CD3D0F;
+  background-color: #CD3D0F;
+}
+/* Blue */
 ._btn-blue {
   background-color: #2D64E6;
+  border: 2px solid #2D64E6;
   color: white;
 }
+._btn-blue:hover {
+  border: 2px solid white;
+  color: white;
+}
+._btn-blue-border {
+  border: 2px solid #2D64E6;
+  background-color: #2D64E6;
+}
+/* Grey */
 ._btn-grey {
   background-color: #D9DADC;
   color: #2D64E6;
+  font-weight: 700;
 }
+._btn-grey:hover {
+  color: #2D64E6;
+}
+._btn-grey-border {
+  border: 3px solid rgba(217, 218, 220, 0.0);
+  background-color: rgba(217, 218, 220, 0.0);
+}
+._btn-grey-border:hover {
+  border: 3px solid rgba(217, 218, 220, 0.3);
+}
+
+/* White */
 ._btn-white {
   background-color: white;
+  border: 2px solid white;
   color:black;
+  font-weight: 700;
 }
+._btn-white:hover {
+  border: 2px solid #161C3B;
+}
+._btn-white-border {
+  border: 2px solid white;
+  background-color: white;
+}
+
+
 /**************************************************
 * Root
 **************************************************/
-:root {
-  --bs-warning-rgb: 205,61,15;
-}
+
+
 
 /**************************************************
 * Media Query
@@ -185,3 +304,4 @@ footer ul li a {
 
 
 /*   xs <575 / sm >576 / md >768 /lg >992   */
+/* --bs-primary-rgb: 45,100,230; */
